@@ -1,0 +1,108 @@
+@import "utf-8";
+@import url(reset.css);
+@import url(common.css);
+
+/* ✨.sns_wrap */
+.sns_wrap .inner .list {
+    width: 100%;
+}
+.sns_wrap .inner .list ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.sns_wrap .inner .list .item02:last-child {
+    margin-bottom: 0;
+}
+.sns_wrap .inner .list .item01 li {
+    width: 385px;
+    height: 385px;
+}
+.sns_wrap .inner .list .item02 li {
+    width: 790px;
+    height: 263px;
+}
+.sns_wrap .inner .list ul li a {
+    display: block;
+}
+.sns_wrap .inner .list ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ✨.card_wrap */
+.card_wrap .title div {
+    width: 600px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 60px;
+}
+.card_wrap .swiper {
+    width: 100%;
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+.card_wrap .swiper-slide {
+  width: 500px;
+  height: 500px;
+}
+.card_wrap .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-pagination-bullet {
+    width: 25px;
+    height: 31px;
+    background: url(../img/star_s.png) center center / cover no-repeat;
+}
+.swiper-pagination-bullet-active {
+    position: relative;
+}
+.swiper-pagination-bullet-active::before {
+    content: '';
+    width: 25px;
+    height: 31px;
+    background: url(../img/star_s_w.png) center center / cover no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom,0px);
+}
+
+/* footer */
+footer {
+    background-color: #222;
+    padding: 50px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #ffcdcd;
+}
+footer p {
+    font-family: 'Derivia';
+    font-size: 40px;
+}
+
+/* .side_btn */
+.side_btn {
+    width: 50px;
+    height: 60px;
+    background: url(../img/side_btn.png) center center / cover no-repeat;
+    position: fixed;
+    bottom: 65px;
+    right: 0;
+    z-index: 9999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.side_btn h1 {
+    font-family: 'Derivia';
+    font-size: 32px;
+    color: #222;
+}
