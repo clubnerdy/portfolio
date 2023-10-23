@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* ✨폰트연결 */
+
+/* Noto Serif Korean */
+/* font-family: 'Noto Serif KR', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;900&display=swap');
+
+/* Noto Sans Korean */
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+/* Derivia */
+/* font-family: 'Derivia'; */
+@font-face {
+    font-family: 'Derivia';
+    src: url('font/Derivia/Derivia-Regular.eot');
+    src: url('font/Derivia/Derivia-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Derivia/Derivia-Regular.woff2') format('woff2'),
+        url('font/Derivia/Derivia-Regular.woff') format('woff'),
+        url('font/Derivia/Derivia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #ffcdcd;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/background01.png) center center / cover no-repeat;
+}
+.inner {
+    width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+}
