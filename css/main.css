@@ -269,11 +269,25 @@
 .intro .inner .img_box img {
     height: 100px;
     object-fit: cover;
+    animation: star2 6s infinite normal linear;
 }
 .intro .inner .img_box img:first-child {
     position: absolute;
     bottom: 30px;
     right: 60px;
+    animation-delay: 3s;
+    transform: scale(0.7);
+}
+@keyframes star2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 /* ✨.port */
@@ -390,10 +404,11 @@
 }
 .port .inner .swiper .swiper-slide .list .item .in_item .button li {
     width: 100px;
-    border: 2px solid #ffcdcd;
+    border: 1px solid #ffcdcd;
     margin-bottom: 15px;
     padding: 10px 0;
     transition: 0.5s;
+    font-weight: 300;
 }
 .port .inner .swiper .swiper-slide .list .item .in_item .button li a {
     display: block;
@@ -402,8 +417,9 @@
 }
 .port .inner .swiper .swiper-slide .list .item .in_item .button li:hover {
     background-color: #fff;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     color: #222;
+    font-weight: 500;
 }
 .swiper-button-prev:after,
 .swiper-button-next:after {
@@ -495,10 +511,11 @@ section.disign {
     border: 2px solid #ffcdcd;
     padding: 5px;
     transition: 0.5s;
+    background-color: #ffffffc4;
+    color: #222;
 }
 .disign .list .swiper .sub_title a:hover {
     background-color: #ffcdcd;
-    color: #222;
 }
 .disign .list .swiper-wrapper {
     transition-timing-function: linear;

@@ -50,10 +50,11 @@ $(function () {
     deceleration: .875,
   });
 
-  //스와이퍼 슬라이드
+  //.port 스와이퍼 슬라이드
   var swiper = new Swiper(".swiper01", {
     spaceBetween: 30,
     effect: "fade",
+    loop: true,
     autoplay: {
         delay: 3500,
         disableOnInteraction: false,
