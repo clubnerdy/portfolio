@@ -45,7 +45,7 @@ $(function () {
   
   const scroll = new Scrooth({
     element: window,
-    strength: 27, //스크롤 한번에 이동하는 거리
+    strength: 20, //스크롤 한번에 이동하는 거리
     acceleration: 1.75,
     deceleration: .875,
   });
@@ -55,10 +55,10 @@ $(function () {
     spaceBetween: 30,
     effect: "fade",
     loop: true,
-    autoplay: {
+    /* autoplay: {
         delay: 3500,
         disableOnInteraction: false,
-      },
+      }, */
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -138,5 +138,22 @@ $(function () {
     },400);
     return false;
   });
+
+  //테마버튼
+  $('.green_btn').click(function () {
+    $('body').css({
+      'color' : '#7cef88',
+    });
+    $('path').css({
+      'stroke' : '#7cef88',
+    });
+    $('section,div,a').css({
+      'border-color' : '#7cef88',
+    });
+    $('.main_visual .visual_top div::before').css({
+      'background-color' : '#7cef88',
+    });
+    $('.title01 img').attr('src','img/star02.png');
+  });//green end
 
 });//jquery end
