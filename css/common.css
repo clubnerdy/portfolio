@@ -61,3 +61,80 @@ section {
     border-radius: 50%;
     pointer-events: none;
 }
+
+/* .side_btn */
+.side_btn {
+    width: 50px;
+    height: 280px;
+    position: fixed;
+    bottom: 65px;
+    right: 0;
+    z-index: 9999999;
+}
+.side_btn .nav_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 1s;
+}
+.side_btn .nav_btn li {
+    height: 40px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.side_btn .nav_btn li img {
+    height: 100%;
+    object-fit: cover;
+}
+.side_btn .up_btn {
+    width: 50px;
+    height: 60px;
+    background: url(../img/side_btn.png) center center / cover no-repeat;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.side_btn .up_btn h1 {
+    font-family: 'Derivia';
+    font-size: 32px;
+    color: #222;
+}
+
+/* 테마변경 */
+body.on,
+body.on .swiper-button-prev:after,
+body.on .swiper-button-next:after {
+    color: #7cef88;
+}
+body.on path {
+    stroke: #7cef88;
+}
+body.on section,
+body.on div,
+body.on a,
+body.on footer,
+body.on .port .swiper .swiper-slide .swiper_r .item .in_item .button li {
+    border-color: #7cef88;
+}
+body.on .visual_top div::before,
+body.on .visual_bottom div::before,
+body.on .intro::before,
+body.on .intro .inner::before,
+body.on .intro .inner::after {
+    background-color: #7cef88;
+}
+body.on .intro .inner .item ul .down a {
+    border-color: #7cef88;
+}
+body.on .side_btn .up_btn {
+    background: url(../img/side_btn_g.png) center center / cover no-repeat;
+}
+body.on .color_btn .thema_btn {
+    color: #ffcdcd;
+}
+body.on .color_btn .thema_btn:hover {
+    background-color: #ffcdcd;
+}

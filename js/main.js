@@ -55,10 +55,6 @@ $(function () {
     spaceBetween: 30,
     effect: "fade",
     loop: true,
-    /* autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      }, */
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -86,9 +82,9 @@ $(function () {
     //up버튼
     let mainTop = $('.main_visual').offset().top;
     if (mainTop < $(window).scrollTop()) {
-        $('.side_btn').fadeIn().css({'display' : 'flex'});
+        $('.up_btn').fadeIn().css({'display' : 'flex'});
     } else {
-        $('.side_btn').fadeOut();
+        $('.up_btn').fadeOut();
     }
     //intro
     let introTop = 400;
@@ -132,28 +128,85 @@ $(function () {
   });//$(window).scroll
 
   //up버튼
-  $('.side_btn').click(function(){
+  $('.up_btn').click(function(){
     $('html, body').animate({
       scrollTop: 0,
-    },400);
+    },2000);
+    return false;
+  });
+  //섹션이동버튼
+  $('.side_btn .nav_btn li:nth-child(1)').click(function(){
+    $('html, body').stop().animate({
+      scrollTop: 0,
+    },2000);
+    return false;
+  });
+  $('.side_btn .nav_btn li:nth-child(2)').click(function(){
+    $('html, body').stop().animate({
+      scrollTop: 963,
+    },2000);
+    return false;
+  });
+  $('.side_btn .nav_btn li:nth-child(3)').click(function(){
+    $('html, body').stop().animate({
+      scrollTop: 1926,
+    },2000);
+    return false;
+  });
+  $('.side_btn .nav_btn li:nth-child(4)').click(function(){
+    $('html, body').stop().animate({
+      scrollTop: 2889,
+    },2000);
     return false;
   });
 
   //테마버튼
-  $('.green_btn').click(function () {
-    $('body').css({
-      'color' : '#7cef88',
-    });
-    $('path').css({
-      'stroke' : '#7cef88',
-    });
-    $('section,div,a').css({
-      'border-color' : '#7cef88',
-    });
-    $('.main_visual .visual_top div::before').css({
-      'background-color' : '#7cef88',
-    });
-    $('.title01 img').attr('src','img/star02.png');
-  });//green end
+  let thema = $('.thema_btn');
+ 
+  thema.click(function () {
+
+    if(thema.css('border-color') == 'rgb(124, 239, 136)') {
+
+      $(this).css({
+        'border-color' : '#ffcdcd',
+      })
+  
+      $('body').addClass('on');
+
+      $('.title01 img,.img_box img,.port .swiper .swiper-slide .swiper_r .title .port_svg img,.side_btn .nav_btn li img').attr('src','img/star_g.png');
+      $('.use01 .top li:nth-child(1) img').attr('src','img/icon01_g.png');
+      $('.use01 .top li:nth-child(2) img').attr('src','img/icon02_g.png');
+      $('.use01 .top li:nth-child(3) img').attr('src','img/icon03_g.png');
+      $('.use01 .top li:nth-child(4) img').attr('src','img/icon04_g.png');
+      $('.use01 .top li:nth-child(5) img').attr('src','img/icon05_g.png');
+      $('.use01 .bottom li:nth-child(1) img').attr('src','img/icon06_g.png');
+      $('.use01 .bottom li:nth-child(2) img').attr('src','img/icon07_g.png');
+      $('.use01 .bottom li:nth-child(3) img').attr('src','img/icon08_g.png');
+      $('.use01 .bottom li:nth-child(4) img').attr('src','img/icon09_g.png');
+      $('.use01 .bottom li:nth-child(5) img').attr('src','img/icon10_g.png');
+      $('.use01 .bottom li:nth-child(6) img').attr('src','img/icon11_g.png');;
+
+    }else {
+      $(this).css({
+        'border-color' : '#7cef88',
+      })
+
+      $('body').removeClass('on');
+
+      $('.title01 img,.img_box img,.port .swiper .swiper-slide .swiper_r .title .port_svg img,.side_btn .nav_btn li img').attr('src','img/star01.png');
+      $('.use01 .top li:nth-child(1) img').attr('src','img/icon01.png');
+      $('.use01 .top li:nth-child(2) img').attr('src','img/icon02.png');
+      $('.use01 .top li:nth-child(3) img').attr('src','img/icon03.png');
+      $('.use01 .top li:nth-child(4) img').attr('src','img/icon04.png');
+      $('.use01 .top li:nth-child(5) img').attr('src','img/icon05.png');
+      $('.use01 .bottom li:nth-child(1) img').attr('src','img/icon06.png');
+      $('.use01 .bottom li:nth-child(2) img').attr('src','img/icon07.png');
+      $('.use01 .bottom li:nth-child(3) img').attr('src','img/icon08.png');
+      $('.use01 .bottom li:nth-child(4) img').attr('src','img/icon09.png');
+      $('.use01 .bottom li:nth-child(5) img').attr('src','img/icon10.png');
+      $('.use01 .bottom li:nth-child(6) img').attr('src','img/icon11.png');
+    }
+    
+  });//thema.click end
 
 });//jquery end

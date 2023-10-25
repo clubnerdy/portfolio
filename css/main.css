@@ -126,6 +126,39 @@
         offset-rotate: -30deg;
     }
 }
+.main_visual .color_btn {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    animation: thema01 1s infinite alternate linear;
+}
+@keyframes thema01 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-8px);
+    }
+}
+.main_visual .color_btn .thema_btn {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 1px solid #7cef88;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    color: #7cef88;
+}
+.main_visual .color_btn .thema_btn:hover {
+    background-color: #7cef88;
+    color: #222;
+}
+.main_visual .color_btn li span {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 18px;
+    line-height: 62px;
+}
 
 /* ✨.intro */
 .intro {
@@ -560,8 +593,8 @@ section.disign {
     padding: 5px;
     transition: 0.5s;
     position: relative;
-    background-color: #ffcdcda6;
     overflow: hidden;
+    border: 1px solid #fff;
 }
 .disign .list .swiper .sub_title a span {
     font-size: 16px;
@@ -615,28 +648,6 @@ footer .inner {
     align-items: center;
     justify-content: center;
 }
-footer .inner .color_btn {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: flex;
-    justify-content: flex-start;
-}
-footer .inner .color_btn li {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #7cef88;
-    margin-right: 20px;
-    cursor: pointer;
-}
-footer .inner .color_btn li:last-child {
-    background-color: #ffcdcd;
-}
-footer .inner .color_btn li span {
-    position: absolute;
-    left: -999999px;
-}
 footer .inner .copy {
     text-align: center;
     font-size: 14px;
@@ -647,25 +658,4 @@ footer .inner .copy {
 footer .inner .copy span {
     padding: 10px 0;
     display: block;
-}
-
-/* .side_btn */
-.side_btn {
-    width: 50px;
-    height: 60px;
-    background: url(../img/side_btn.png) center center / cover no-repeat;
-    position: fixed;
-    bottom: 65px;
-    right: 0;
-    z-index: 9999999;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    opacity: 0.8;
-}
-.side_btn h1 {
-    font-family: 'Derivia';
-    font-size: 32px;
-    color: #222;
 }

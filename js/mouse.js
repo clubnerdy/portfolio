@@ -58,7 +58,7 @@
           star[c].style.left=(starx[c]=x)+"px";
           star[c].style.top=(stary[c]=y+1)+"px";
           star[c].style.clip="rect(0px, 5px, 5px, 0px)";
-          star[c].childNodes[0].style.backgroundColor=star[c].childNodes[1].style.backgroundColor="#ffcdcd";
+          star[c].childNodes[0].style.backgroundColor=star[c].childNodes[1].style.backgroundColor="#fff";
           star[c].style.visibility="visible";
           starv[c]=50;
           break;
