@@ -98,7 +98,7 @@ $(function () {
       });
     }
     //port
-    let portTop = 1100;
+    let portTop = 1300;
     if (portTop < $(window).scrollTop()) {
       $('.port .swiper').css({
         'opacity' : 1,
@@ -108,8 +108,25 @@ $(function () {
         'opacity' : 0,
       });
     }
+    //react
+    let reactTop = 2200;
+    if (reactTop < $(window).scrollTop()) {
+      $('.react .list .item:first-child').css({
+        'opacity' : 1,
+      });
+      $('.react .list .item:last-child').css({
+        'opacity' : 1,
+      });
+    } else {
+      $('.react .list .item:first-child').css({
+        'opacity' : 0,
+      });
+      $('.react .list .item:last-child').css({
+        'opacity' : 0,
+      });
+    }
     //disign
-    let designTop = 1800;
+    let designTop = 3100;
     if (designTop < $(window).scrollTop()) {
       $('.disign .title').css({
         'opacity' : 1,
@@ -134,6 +151,7 @@ $(function () {
     },2000);
     return false;
   });
+
   //섹션이동버튼
   $('.side_btn .nav_btn li:nth-child(1)').click(function(){
     $('html, body').stop().animate({
@@ -156,6 +174,12 @@ $(function () {
   $('.side_btn .nav_btn li:nth-child(4)').click(function(){
     $('html, body').stop().animate({
       scrollTop: 2889,
+    },2000);
+    return false;
+  });
+  $('.side_btn .nav_btn li:nth-child(5)').click(function(){
+    $('html, body').stop().animate({
+      scrollTop: 3852,
     },2000);
     return false;
   });
@@ -208,5 +232,10 @@ $(function () {
     }
     
   });//thema.click end
+
+  //use01 .mouseenter()
+  $('.use01 li img').mouseenter(function(){
+    $('.use01 h5').text($(this).attr('alt'));
+  });
 
 });//jquery end

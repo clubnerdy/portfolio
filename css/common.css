@@ -65,7 +65,7 @@ section {
 /* .side_btn */
 .side_btn {
     width: 50px;
-    height: 280px;
+    height: 335px;
     position: fixed;
     bottom: 65px;
     right: 0;
@@ -132,9 +132,19 @@ body.on .intro .inner .item ul .down a {
 body.on .side_btn .up_btn {
     background: url(../img/side_btn_g.png) center center / cover no-repeat;
 }
+
+body.on .react .list .item .in_item .button li {
+    border: 1px solid #7cef88;
+}
+body.on .react::before {
+    background-color: #7cef88;
+}
 body.on .color_btn .thema_btn {
     color: #ffcdcd;
 }
 body.on .color_btn .thema_btn:hover {
     background-color: #ffcdcd;
+}
+body.on .react .react_bottom h1::before {
+    background: url(../img/star_g.png) center center / cover no-repeat;
 }
