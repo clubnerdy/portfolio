@@ -148,3 +148,9 @@ body.on .color_btn .thema_btn:hover {
 body.on .react .react_bottom h1::before {
     background: url(../img/star_g.png) center center / cover no-repeat;
 }
+body.on footer .inner .contact li:first-child {
+    border-color: #7cef88;
+}
+body.on footer .inner .contact li:first-child:hover {
+    background-color: #7cef88;
+}

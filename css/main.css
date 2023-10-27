@@ -781,10 +781,32 @@ footer {
 footer .inner {
     width: 1600px;
     margin: 0 auto;
-    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+footer .inner .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+footer .inner .contact li:first-child {
+    border:  1px solid #ffcdcd;
+    padding: 5px 8px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+footer .inner .contact li:first-child a {
+    display: block;
+}
+footer .inner .contact li:first-child:hover {
+    background-color: #ffcdcd;
+    color: #222;
+}
+footer .inner .contact li:last-child {
+    font-size: 18px;
 }
 footer .inner .copy {
     text-align: center;
