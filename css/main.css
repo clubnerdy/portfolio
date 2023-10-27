@@ -530,7 +530,7 @@
 .swiper-pagination-bullet {
     width: 25px;
     height: 31px;
-    background: url(../img/star_s_W.png) center center / cover no-repeat;
+    background: url(../img/star_s_w.png) center center / cover no-repeat;
 }
 .swiper-pagination-bullet-active {
     position: relative;
