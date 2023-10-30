@@ -179,7 +179,9 @@
 .intro .inner {
     display: flex;
     justify-content: space-between;
-    padding: 60px 0;
+    /* padding: 60px 0; */
+    padding: 6.25vh 0;
+    background-color: cadetblue;
 }
 .intro .inner::before {
     content: '';
@@ -241,14 +243,17 @@
 .intro .inner .item h3 {
     font-family: 'Derivia';
     font-size: 44px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin-bottom: 3.12vh;
 }
 .intro .inner .item ul li {
     display: flex;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 2.08vh;
 }
 .intro .inner .item ul li:last-child {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
+    margin-bottom: 6.25vh;
 }
 .intro .inner .item ul .down a {
     margin-right: 10px;
@@ -282,7 +287,11 @@
     height: 40px;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 2.08vh;
+}
+.intro .inner .item .use01 ul:nth-child(2) {
+    margin-bottom: 1.5vh;
 }
 .intro .inner .item .use01 ul li {
     margin-right: 12px;
